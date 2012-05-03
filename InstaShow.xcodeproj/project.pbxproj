@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE9CB82115527DC2000B2141 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82015527DC2000B2141 /* UIKit.framework */; };
+		CE9CB82315527DC2000B2141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82215527DC2000B2141 /* Foundation.framework */; };
+		CE9CB82515527DC2000B2141 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82415527DC2000B2141 /* CoreGraphics.framework */; };
+		CE9CB82B15527DC2000B2141 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9CB82915527DC2000B2141 /* InfoPlist.strings */; };
+		CE9CB82D15527DC2000B2141 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CB82C15527DC2000B2141 /* main.m */; };
+		CE9CB83115527DC2000B2141 /* ODAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CB83015527DC2000B2141 /* ODAppDelegate.m */; };
+		CE9CB83415527DC2000B2141 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9CB83215527DC2000B2141 /* MainStoryboard.storyboard */; };
+		CE9CB83715527DC2000B2141 /* ODViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CB83615527DC2000B2141 /* ODViewController.m */; };
+		CE9CB83F15527DC2000B2141 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB83E15527DC2000B2141 /* SenTestingKit.framework */; };
+		CE9CB84015527DC2000B2141 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82015527DC2000B2141 /* UIKit.framework */; };
+		CE9CB84115527DC2000B2141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82215527DC2000B2141 /* Foundation.framework */; };
+		CE9CB84915527DC2000B2141 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9CB84715527DC2000B2141 /* InfoPlist.strings */; };
+		CE9CB84C15527DC2000B2141 /* InstaShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9CB84B15527DC2000B2141 /* InstaShowTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9CB84215527DC2000B2141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9CB81315527DC2000B2141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9CB81B15527DC2000B2141;
+			remoteInfo = InstaShow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE9CB81C15527DC2000B2141 /* InstaShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9CB82015527DC2000B2141 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE9CB82215527DC2000B2141 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE9CB82415527DC2000B2141 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE9CB82815527DC2000B2141 /* InstaShow-Info.plist */ = {isa = PBXFileReference; path = "InstaShow-Info.plist"; sourceTree = "<group>"; };
+		CE9CB82A15527DC2000B2141 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE9CB82C15527DC2000B2141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9CB82E15527DC2000B2141 /* InstaShow-Prefix.pch */ = {isa = PBXFileReference; path = "InstaShow-Prefix.pch"; sourceTree = "<group>"; };
+		CE9CB82F15527DC2000B2141 /* ODAppDelegate.h */ = {isa = PBXFileReference; path = ODAppDelegate.h; sourceTree = "<group>"; };
+		CE9CB83015527DC2000B2141 /* ODAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAppDelegate.m; sourceTree = "<group>"; };
+		CE9CB83315527DC2000B2141 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CE9CB83515527DC2000B2141 /* ODViewController.h */ = {isa = PBXFileReference; path = ODViewController.h; sourceTree = "<group>"; };
+		CE9CB83615527DC2000B2141 /* ODViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODViewController.m; sourceTree = "<group>"; };
+		CE9CB83D15527DC2000B2141 /* InstaShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9CB83E15527DC2000B2141 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE9CB84615527DC2000B2141 /* InstaShowTests-Info.plist */ = {isa = PBXFileReference; path = "InstaShowTests-Info.plist"; sourceTree = "<group>"; };
+		CE9CB84815527DC2000B2141 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE9CB84A15527DC2000B2141 /* InstaShowTests.h */ = {isa = PBXFileReference; path = InstaShowTests.h; sourceTree = "<group>"; };
+		CE9CB84B15527DC2000B2141 /* InstaShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaShowTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9CB81915527DC2000B2141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9CB82115527DC2000B2141 /* UIKit.framework in Frameworks */,
+				CE9CB82315527DC2000B2141 /* Foundation.framework in Frameworks */,
+				CE9CB82515527DC2000B2141 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9CB83915527DC2000B2141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9CB83F15527DC2000B2141 /* SenTestingKit.framework in Frameworks */,
+				CE9CB84015527DC2000B2141 /* UIKit.framework in Frameworks */,
+				CE9CB84115527DC2000B2141 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE9CB81115527DC2000B2141 = {
+			isa = PBXGroup;
+			children = (
+				CE9CB82615527DC2000B2141 /* InstaShow */,
+				CE9CB84415527DC2000B2141 /* InstaShowTests */,
+				CE9CB81F15527DC2000B2141 /* Frameworks */,
+				CE9CB81D15527DC2000B2141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9CB81D15527DC2000B2141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CB81C15527DC2000B2141 /* InstaShow.app */,
+				CE9CB83D15527DC2000B2141 /* InstaShowTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9CB81F15527DC2000B2141 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CB82015527DC2000B2141 /* UIKit.framework */,
+				CE9CB82215527DC2000B2141 /* Foundation.framework */,
+				CE9CB82415527DC2000B2141 /* CoreGraphics.framework */,
+				CE9CB83E15527DC2000B2141 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9CB82615527DC2000B2141 /* InstaShow */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CB82F15527DC2000B2141 /* ODAppDelegate.h */,
+				CE9CB83015527DC2000B2141 /* ODAppDelegate.m */,
+				CE9CB83215527DC2000B2141 /* MainStoryboard.storyboard */,
+				CE9CB83515527DC2000B2141 /* ODViewController.h */,
+				CE9CB83615527DC2000B2141 /* ODViewController.m */,
+				CE9CB82715527DC2000B2141 /* Supporting Files */,
+			);
+			path = InstaShow;
+			sourceTree = "<group>";
+		};
+		CE9CB82715527DC2000B2141 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CB82815527DC2000B2141 /* InstaShow-Info.plist */,
+				CE9CB82915527DC2000B2141 /* InfoPlist.strings */,
+				CE9CB82C15527DC2000B2141 /* main.m */,
+				CE9CB82E15527DC2000B2141 /* InstaShow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE9CB84415527DC2000B2141 /* InstaShowTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CB84A15527DC2000B2141 /* InstaShowTests.h */,
+				CE9CB84B15527DC2000B2141 /* InstaShowTests.m */,
+				CE9CB84515527DC2000B2141 /* Supporting Files */,
+			);
+			path = InstaShowTests;
+			sourceTree = "<group>";
+		};
+		CE9CB84515527DC2000B2141 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CB84615527DC2000B2141 /* InstaShowTests-Info.plist */,
+				CE9CB84715527DC2000B2141 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9CB81B15527DC2000B2141 /* InstaShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9CB84F15527DC2000B2141 /* Build configuration list for PBXNativeTarget "InstaShow" */;
+			buildPhases = (
+				CE9CB81815527DC2000B2141 /* Sources */,
+				CE9CB81915527DC2000B2141 /* Frameworks */,
+				CE9CB81A15527DC2000B2141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaShow;
+			productName = InstaShow;
+			productReference = CE9CB81C15527DC2000B2141 /* InstaShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9CB83C15527DC2000B2141 /* InstaShowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9CB85215527DC2000B2141 /* Build configuration list for PBXNativeTarget "InstaShowTests" */;
+			buildPhases = (
+				CE9CB83815527DC2000B2141 /* Sources */,
+				CE9CB83915527DC2000B2141 /* Frameworks */,
+				CE9CB83A15527DC2000B2141 /* Resources */,
+				CE9CB83B15527DC2000B2141 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9CB84315527DC2000B2141 /* PBXTargetDependency */,
+			);
+			name = InstaShowTests;
+			productName = InstaShowTests;
+			productReference = CE9CB83D15527DC2000B2141 /* InstaShowTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9CB81315527DC2000B2141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OD;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CE9CB81615527DC2000B2141 /* Build configuration list for PBXProject "InstaShow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE9CB81115527DC2000B2141;
+			productRefGroup = CE9CB81D15527DC2000B2141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9CB81B15527DC2000B2141 /* InstaShow */,
+				CE9CB83C15527DC2000B2141 /* InstaShowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9CB81A15527DC2000B2141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9CB82B15527DC2000B2141 /* InfoPlist.strings in Resources */,
+				CE9CB83415527DC2000B2141 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9CB83A15527DC2000B2141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9CB84915527DC2000B2141 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE9CB83B15527DC2000B2141 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9CB81815527DC2000B2141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9CB82D15527DC2000B2141 /* main.m in Sources */,
+				CE9CB83115527DC2000B2141 /* ODAppDelegate.m in Sources */,
+				CE9CB83715527DC2000B2141 /* ODViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9CB83815527DC2000B2141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9CB84C15527DC2000B2141 /* InstaShowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9CB84315527DC2000B2141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9CB81B15527DC2000B2141 /* InstaShow */;
+			targetProxy = CE9CB84215527DC2000B2141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE9CB82915527DC2000B2141 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9CB82A15527DC2000B2141 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE9CB83215527DC2000B2141 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9CB83315527DC2000B2141 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		CE9CB84715527DC2000B2141 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9CB84815527DC2000B2141 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9CB84D15527DC2000B2141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE9CB84E15527DC2000B2141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9CB85015527DC2000B2141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaShow/InstaShow-Prefix.pch";
+				INFOPLIST_FILE = "InstaShow/InstaShow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE9CB85115527DC2000B2141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaShow/InstaShow-Prefix.pch";
+				INFOPLIST_FILE = "InstaShow/InstaShow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE9CB85315527DC2000B2141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaShow.app/InstaShow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaShow/InstaShow-Prefix.pch";
+				INFOPLIST_FILE = "InstaShowTests/InstaShowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE9CB85415527DC2000B2141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaShow.app/InstaShow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaShow/InstaShow-Prefix.pch";
+				INFOPLIST_FILE = "InstaShowTests/InstaShowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9CB81615527DC2000B2141 /* Build configuration list for PBXProject "InstaShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9CB84D15527DC2000B2141 /* Debug */,
+				CE9CB84E15527DC2000B2141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9CB84F15527DC2000B2141 /* Build configuration list for PBXNativeTarget "InstaShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9CB85015527DC2000B2141 /* Debug */,
+				CE9CB85115527DC2000B2141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE9CB85215527DC2000B2141 /* Build configuration list for PBXNativeTarget "InstaShowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9CB85315527DC2000B2141 /* Debug */,
+				CE9CB85415527DC2000B2141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9CB81315527DC2000B2141 /* Project object */;
+}
