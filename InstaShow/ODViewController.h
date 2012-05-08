@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSONKit.h"
 
-@interface ODViewController : UIViewController
-
+@interface ODViewController : UIViewController <UITableViewDataSource>
+{
+    NSArray *dataArray;
+}
+@property (nonatomic,strong) NSDictionary *jsonData;
+@property (nonatomic,weak) IBOutlet UITableView *photoGridTableView;
 @end

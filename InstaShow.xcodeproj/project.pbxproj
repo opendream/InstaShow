@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE507C981553D1A60044A5D0 /* Popular.json in Resources */ = {isa = PBXBuildFile; fileRef = CE507C971553D1A60044A5D0 /* Popular.json */; };
+		CE6115D91552A2FA0009D4B8 /* DataLike.json in Resources */ = {isa = PBXBuildFile; fileRef = CE6115D81552A2FA0009D4B8 /* DataLike.json */; };
+		CE7FAD5915538AC2002C6641 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = CE7FAD5515538AC2002C6641 /* CHANGELOG.md */; };
+		CE7FAD5A15538AC2002C6641 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7FAD5715538AC2002C6641 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE7FAD5B15538AC2002C6641 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CE7FAD5815538AC2002C6641 /* README.md */; };
 		CE9CB82115527DC2000B2141 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82015527DC2000B2141 /* UIKit.framework */; };
 		CE9CB82315527DC2000B2141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82215527DC2000B2141 /* Foundation.framework */; };
 		CE9CB82515527DC2000B2141 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CB82415527DC2000B2141 /* CoreGraphics.framework */; };
@@ -33,24 +38,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE507C971553D1A60044A5D0 /* Popular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Popular.json; sourceTree = "<group>"; };
+		CE6115D81552A2FA0009D4B8 /* DataLike.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataLike.json; sourceTree = "<group>"; };
+		CE7FAD5515538AC2002C6641 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		CE7FAD5615538AC2002C6641 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CE7FAD5715538AC2002C6641 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		CE7FAD5815538AC2002C6641 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		CE9CB81C15527DC2000B2141 /* InstaShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9CB82015527DC2000B2141 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE9CB82215527DC2000B2141 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9CB82415527DC2000B2141 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE9CB82815527DC2000B2141 /* InstaShow-Info.plist */ = {isa = PBXFileReference; path = "InstaShow-Info.plist"; sourceTree = "<group>"; };
+		CE9CB82815527DC2000B2141 /* InstaShow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaShow-Info.plist"; sourceTree = "<group>"; };
 		CE9CB82A15527DC2000B2141 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE9CB82C15527DC2000B2141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE9CB82E15527DC2000B2141 /* InstaShow-Prefix.pch */ = {isa = PBXFileReference; path = "InstaShow-Prefix.pch"; sourceTree = "<group>"; };
-		CE9CB82F15527DC2000B2141 /* ODAppDelegate.h */ = {isa = PBXFileReference; path = ODAppDelegate.h; sourceTree = "<group>"; };
+		CE9CB82E15527DC2000B2141 /* InstaShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaShow-Prefix.pch"; sourceTree = "<group>"; };
+		CE9CB82F15527DC2000B2141 /* ODAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODAppDelegate.h; sourceTree = "<group>"; };
 		CE9CB83015527DC2000B2141 /* ODAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODAppDelegate.m; sourceTree = "<group>"; };
 		CE9CB83315527DC2000B2141 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CE9CB83515527DC2000B2141 /* ODViewController.h */ = {isa = PBXFileReference; path = ODViewController.h; sourceTree = "<group>"; };
+		CE9CB83515527DC2000B2141 /* ODViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODViewController.h; sourceTree = "<group>"; };
 		CE9CB83615527DC2000B2141 /* ODViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODViewController.m; sourceTree = "<group>"; };
 		CE9CB83D15527DC2000B2141 /* InstaShowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaShowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9CB83E15527DC2000B2141 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CE9CB84615527DC2000B2141 /* InstaShowTests-Info.plist */ = {isa = PBXFileReference; path = "InstaShowTests-Info.plist"; sourceTree = "<group>"; };
+		CE9CB84615527DC2000B2141 /* InstaShowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaShowTests-Info.plist"; sourceTree = "<group>"; };
 		CE9CB84815527DC2000B2141 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE9CB84A15527DC2000B2141 /* InstaShowTests.h */ = {isa = PBXFileReference; path = InstaShowTests.h; sourceTree = "<group>"; };
+		CE9CB84A15527DC2000B2141 /* InstaShowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaShowTests.h; sourceTree = "<group>"; };
 		CE9CB84B15527DC2000B2141 /* InstaShowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaShowTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,9 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7FAD5415538AC2002C6641 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FAD5515538AC2002C6641 /* CHANGELOG.md */,
+				CE7FAD5615538AC2002C6641 /* JSONKit.h */,
+				CE7FAD5715538AC2002C6641 /* JSONKit.m */,
+				CE7FAD5815538AC2002C6641 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
 		CE9CB81115527DC2000B2141 = {
 			isa = PBXGroup;
 			children = (
+				CE7FAD5415538AC2002C6641 /* JSONKit */,
 				CE9CB82615527DC2000B2141 /* InstaShow */,
 				CE9CB84415527DC2000B2141 /* InstaShowTests */,
 				CE9CB81F15527DC2000B2141 /* Frameworks */,
@@ -111,6 +134,8 @@
 		CE9CB82615527DC2000B2141 /* InstaShow */ = {
 			isa = PBXGroup;
 			children = (
+				CE6115D81552A2FA0009D4B8 /* DataLike.json */,
+				CE507C971553D1A60044A5D0 /* Popular.json */,
 				CE9CB82F15527DC2000B2141 /* ODAppDelegate.h */,
 				CE9CB83015527DC2000B2141 /* ODAppDelegate.m */,
 				CE9CB83215527DC2000B2141 /* MainStoryboard.storyboard */,
@@ -224,6 +249,10 @@
 			files = (
 				CE9CB82B15527DC2000B2141 /* InfoPlist.strings in Resources */,
 				CE9CB83415527DC2000B2141 /* MainStoryboard.storyboard in Resources */,
+				CE6115D91552A2FA0009D4B8 /* DataLike.json in Resources */,
+				CE7FAD5915538AC2002C6641 /* CHANGELOG.md in Resources */,
+				CE7FAD5B15538AC2002C6641 /* README.md in Resources */,
+				CE507C981553D1A60044A5D0 /* Popular.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +290,7 @@
 				CE9CB82D15527DC2000B2141 /* main.m in Sources */,
 				CE9CB83115527DC2000B2141 /* ODAppDelegate.m in Sources */,
 				CE9CB83715527DC2000B2141 /* ODViewController.m in Sources */,
+				CE7FAD5A15538AC2002C6641 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +460,7 @@
 				CE9CB85115527DC2000B2141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9CB85215527DC2000B2141 /* Build configuration list for PBXNativeTarget "InstaShowTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +469,7 @@
 				CE9CB85415527DC2000B2141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
