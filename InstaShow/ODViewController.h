@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "JSONKit.h"
+#import "AQGridView.h"
 
-@interface ODViewController : UIViewController <UITableViewDataSource>
+@interface ODViewController : UIViewController <UITableViewDataSource, AQGridViewDataSource, AQGridViewDelegate, UIWebViewDelegate>
 {
     NSArray *dataArray;
+    NSString *accessToken;
+    IBOutlet UIButton *logOutButton;
 }
+
+@property (weak, nonatomic) IBOutlet AQGridView *gridView;
 @property (nonatomic,strong) NSDictionary *jsonData;
 @property (nonatomic,weak) IBOutlet UITableView *photoGridTableView;
 @end

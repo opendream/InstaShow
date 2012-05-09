@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2CCC6215590C5800387144 /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC4E15590C5800387144 /* AQGridView.m */; };
+		CE2CCC6315590C5800387144 /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5015590C5800387144 /* AQGridViewAnimatorItem.m */; };
+		CE2CCC6415590C5800387144 /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5315590C5800387144 /* AQGridViewCell.m */; };
+		CE2CCC6515590C5800387144 /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5515590C5800387144 /* AQGridViewController.m */; };
+		CE2CCC6615590C5800387144 /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5715590C5800387144 /* AQGridViewData.m */; };
+		CE2CCC6715590C5800387144 /* AQGridViewUpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5915590C5800387144 /* AQGridViewUpdateInfo.m */; };
+		CE2CCC6815590C5800387144 /* AQGridViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5B15590C5800387144 /* AQGridViewUpdateItem.m */; };
+		CE2CCC6915590C5800387144 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5D15590C5800387144 /* NSIndexSet+AQIndexesOutsideSet.m */; };
+		CE2CCC6A15590C5800387144 /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC5F15590C5800387144 /* NSIndexSet+AQIsSetContiguous.m */; };
+		CE2CCC6B15590C5800387144 /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCC6115590C5800387144 /* UIColor+AQGridView.m */; };
+		CE2CCC72155917D800387144 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2CCC71155917D800387144 /* QuartzCore.framework */; };
 		CE507C981553D1A60044A5D0 /* Popular.json in Resources */ = {isa = PBXBuildFile; fileRef = CE507C971553D1A60044A5D0 /* Popular.json */; };
 		CE6115D91552A2FA0009D4B8 /* DataLike.json in Resources */ = {isa = PBXBuildFile; fileRef = CE6115D81552A2FA0009D4B8 /* DataLike.json */; };
 		CE7FAD5915538AC2002C6641 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = CE7FAD5515538AC2002C6641 /* CHANGELOG.md */; };
@@ -38,6 +49,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE2CCC4B15590C5800387144 /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLayout.h"; sourceTree = "<group>"; };
+		CE2CCC4C15590C5800387144 /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
+		CE2CCC4D15590C5800387144 /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView.h; sourceTree = "<group>"; };
+		CE2CCC4E15590C5800387144 /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridView.m; sourceTree = "<group>"; };
+		CE2CCC4F15590C5800387144 /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
+		CE2CCC5015590C5800387144 /* AQGridViewAnimatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewAnimatorItem.m; sourceTree = "<group>"; };
+		CE2CCC5115590C5800387144 /* AQGridViewCell+AQGridViewCellPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridViewCell+AQGridViewCellPrivate.h"; sourceTree = "<group>"; };
+		CE2CCC5215590C5800387144 /* AQGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewCell.h; sourceTree = "<group>"; };
+		CE2CCC5315590C5800387144 /* AQGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewCell.m; sourceTree = "<group>"; };
+		CE2CCC5415590C5800387144 /* AQGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewController.h; sourceTree = "<group>"; };
+		CE2CCC5515590C5800387144 /* AQGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewController.m; sourceTree = "<group>"; };
+		CE2CCC5615590C5800387144 /* AQGridViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewData.h; sourceTree = "<group>"; };
+		CE2CCC5715590C5800387144 /* AQGridViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewData.m; sourceTree = "<group>"; };
+		CE2CCC5815590C5800387144 /* AQGridViewUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateInfo.h; sourceTree = "<group>"; };
+		CE2CCC5915590C5800387144 /* AQGridViewUpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateInfo.m; sourceTree = "<group>"; };
+		CE2CCC5A15590C5800387144 /* AQGridViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateItem.h; sourceTree = "<group>"; };
+		CE2CCC5B15590C5800387144 /* AQGridViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateItem.m; sourceTree = "<group>"; };
+		CE2CCC5C15590C5800387144 /* NSIndexSet+AQIndexesOutsideSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIndexesOutsideSet.h"; sourceTree = "<group>"; };
+		CE2CCC5D15590C5800387144 /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
+		CE2CCC5E15590C5800387144 /* NSIndexSet+AQIsSetContiguous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIsSetContiguous.h"; sourceTree = "<group>"; };
+		CE2CCC5F15590C5800387144 /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
+		CE2CCC6015590C5800387144 /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AQGridView.h"; sourceTree = "<group>"; };
+		CE2CCC6115590C5800387144 /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
+		CE2CCC71155917D800387144 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CE507C971553D1A60044A5D0 /* Popular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Popular.json; sourceTree = "<group>"; };
 		CE6115D81552A2FA0009D4B8 /* DataLike.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataLike.json; sourceTree = "<group>"; };
 		CE7FAD5515538AC2002C6641 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -70,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2CCC72155917D800387144 /* QuartzCore.framework in Frameworks */,
 				CE9CB82115527DC2000B2141 /* UIKit.framework in Frameworks */,
 				CE9CB82315527DC2000B2141 /* Foundation.framework in Frameworks */,
 				CE9CB82515527DC2000B2141 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +125,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2CCC4A15590C5800387144 /* AQGridView */ = {
+			isa = PBXGroup;
+			children = (
+				CE2CCC4B15590C5800387144 /* AQGridView+CellLayout.h */,
+				CE2CCC4C15590C5800387144 /* AQGridView+CellLocationDelegation.h */,
+				CE2CCC4D15590C5800387144 /* AQGridView.h */,
+				CE2CCC4E15590C5800387144 /* AQGridView.m */,
+				CE2CCC4F15590C5800387144 /* AQGridViewAnimatorItem.h */,
+				CE2CCC5015590C5800387144 /* AQGridViewAnimatorItem.m */,
+				CE2CCC5115590C5800387144 /* AQGridViewCell+AQGridViewCellPrivate.h */,
+				CE2CCC5215590C5800387144 /* AQGridViewCell.h */,
+				CE2CCC5315590C5800387144 /* AQGridViewCell.m */,
+				CE2CCC5415590C5800387144 /* AQGridViewController.h */,
+				CE2CCC5515590C5800387144 /* AQGridViewController.m */,
+				CE2CCC5615590C5800387144 /* AQGridViewData.h */,
+				CE2CCC5715590C5800387144 /* AQGridViewData.m */,
+				CE2CCC5815590C5800387144 /* AQGridViewUpdateInfo.h */,
+				CE2CCC5915590C5800387144 /* AQGridViewUpdateInfo.m */,
+				CE2CCC5A15590C5800387144 /* AQGridViewUpdateItem.h */,
+				CE2CCC5B15590C5800387144 /* AQGridViewUpdateItem.m */,
+				CE2CCC5C15590C5800387144 /* NSIndexSet+AQIndexesOutsideSet.h */,
+				CE2CCC5D15590C5800387144 /* NSIndexSet+AQIndexesOutsideSet.m */,
+				CE2CCC5E15590C5800387144 /* NSIndexSet+AQIsSetContiguous.h */,
+				CE2CCC5F15590C5800387144 /* NSIndexSet+AQIsSetContiguous.m */,
+				CE2CCC6015590C5800387144 /* UIColor+AQGridView.h */,
+				CE2CCC6115590C5800387144 /* UIColor+AQGridView.m */,
+			);
+			name = AQGridView;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		CE7FAD5415538AC2002C6641 /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +170,7 @@
 		CE9CB81115527DC2000B2141 = {
 			isa = PBXGroup;
 			children = (
+				CE2CCC4A15590C5800387144 /* AQGridView */,
 				CE7FAD5415538AC2002C6641 /* JSONKit */,
 				CE9CB82615527DC2000B2141 /* InstaShow */,
 				CE9CB84415527DC2000B2141 /* InstaShowTests */,
@@ -123,6 +191,7 @@
 		CE9CB81F15527DC2000B2141 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE2CCC71155917D800387144 /* QuartzCore.framework */,
 				CE9CB82015527DC2000B2141 /* UIKit.framework */,
 				CE9CB82215527DC2000B2141 /* Foundation.framework */,
 				CE9CB82415527DC2000B2141 /* CoreGraphics.framework */,
@@ -291,6 +360,16 @@
 				CE9CB83115527DC2000B2141 /* ODAppDelegate.m in Sources */,
 				CE9CB83715527DC2000B2141 /* ODViewController.m in Sources */,
 				CE7FAD5A15538AC2002C6641 /* JSONKit.m in Sources */,
+				CE2CCC6215590C5800387144 /* AQGridView.m in Sources */,
+				CE2CCC6315590C5800387144 /* AQGridViewAnimatorItem.m in Sources */,
+				CE2CCC6415590C5800387144 /* AQGridViewCell.m in Sources */,
+				CE2CCC6515590C5800387144 /* AQGridViewController.m in Sources */,
+				CE2CCC6615590C5800387144 /* AQGridViewData.m in Sources */,
+				CE2CCC6715590C5800387144 /* AQGridViewUpdateInfo.m in Sources */,
+				CE2CCC6815590C5800387144 /* AQGridViewUpdateItem.m in Sources */,
+				CE2CCC6915590C5800387144 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
+				CE2CCC6A15590C5800387144 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				CE2CCC6B15590C5800387144 /* UIColor+AQGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
