@@ -103,7 +103,8 @@ NSString *redirectURLforGetAccessToken;
     [self.gridView reloadData];
 }
 
--(void)readFileJson{
+-(void)readFileJson
+{
     NSLog(@"readFileJson");
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Popular" ofType:@"json"];
     NSData *jsonDataWithPath = [NSData dataWithContentsOfFile:path];
@@ -116,7 +117,7 @@ NSString *redirectURLforGetAccessToken;
     dataArray = [self.jsonData objectForKey:@"data"];
 }
 
--(void) clearAccessToken
+-(void)clearAccessToken
 {
     NSLog(@"clearAccessToken");
     accessToken = @"";
@@ -130,6 +131,26 @@ NSString *redirectURLforGetAccessToken;
     NSLog(@"LOG OUT@!!");
     
     [self readFeedJsonFromURL];
+}
+
+- (void)hideImageView:(UITapGestureRecognizer *)sender
+{
+    NSLog(@"hide image view");
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        NSLog(@"tappppppppp");
+        
+        backgroundView.alpha = 1;
+        [imageView setFrame:CGRectMake(0, 0, 320, 320)];
+        
+        [UIView beginAnimations:@"" context:NULL];
+        backgroundView.alpha = 0;
+        [imageView setFrame:CGRectMake(0, 0, 0, 0)];
+        //imageView.hidden = YES;
+        //backgroundView.hidden = YES;
+        [UIView commitAnimations];
+        
+    }
+    
 }
 
 - (void)viewDidLoad
@@ -146,7 +167,15 @@ NSString *redirectURLforGetAccessToken;
     self.gridView.delegate = self;
 
     [logOutButton addTarget:self action:@selector(clearAccessToken) forControlEvents:UIControlEventTouchUpInside];
-     
+    
+    backgroundView.backgroundColor = [UIColor colorWithWhite:0.2 alpha:0.4];
+    
+    imageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideImageView:)];
+    [tapGesture setNumberOfTapsRequired:1];
+    [tapGesture setNumberOfTouchesRequired:1];
+    [imageView addGestureRecognizer:tapGesture];
+    
     if([accessToken isEqualToString:@""] || accessToken == nil){
         [self readFeedJsonFromURL];
     }
@@ -156,8 +185,17 @@ NSString *redirectURLforGetAccessToken;
 {
     [self setGridView:nil];
     logOutButton = nil;
+    imageView = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    imageView.hidden = YES;
+    backgroundView.hidden = YES;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -191,12 +229,9 @@ NSString *redirectURLforGetAccessToken;
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,  0ul);
     dispatch_async(queue, ^{
-//        NSString *url=[pat stringByAppendingPathComponent:@"comments.txt"];
-//        NSString *u=[NSString stringWithContentsOfFile:url encoding:NSUTF8StringEncoding error:nil];
-        
+
         NSArray *documentDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentPath = [documentDir lastObject];
-//        NSLog(@"%@",documentPath);
         
         NSString *imageName = [[NSURL URLWithString:imagePath] lastPathComponent];
         NSData *image;
@@ -209,55 +244,41 @@ NSString *redirectURLforGetAccessToken;
         {
             image = [NSData dataWithContentsOfFile:imagePathInCache];
         }
-        else        
-        {
+        else {
             NSURL *imageURL = [NSURL URLWithString:imagePath];
         
             image = [NSData dataWithContentsOfURL:imageURL];
             [image writeToFile:[documentPath stringByAppendingPathComponent:imageName] atomically:YES];
-            
-
         }
-//        else // if มีอยู่ใน cache
-//        {
-//            image = [NSData dataWithContentsOfFile:documentPath];
-//        }
+
         dispatch_sync(dispatch_get_main_queue(), ^{
             UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
             cell.imageView.image = [UIImage imageWithData:image];
             [cell setNeedsLayout];
-//            NSLog(@"Download");
         });
     });
-//    
-//    NSString *imagePath = [[[[dataArray objectAtIndex:indexPath.row] objectForKey:@"images"] objectForKey:@"standard_resolution"] objectForKey:@"url"];
-//    
-//    NSURLRequest *requestImage = [NSURLRequest requestWithURL:[NSURL URLWithString:imagePath]];
-//
-//    NSData *imageData = [NSURLConnection  sendSynchronousRequest:requestImage returningResponse:nil error:NULL];
 
-    
-//    cell.imageView.image = [UIImage imageWithData:imageData];
-
-    
     NSString *caption, *owner;
     id captionDict = [[dataArray objectAtIndex:indexPath.row] objectForKey:@"caption"];
-    if(![captionDict isKindOfClass:[NSNull class]]){                             
+    
+    if(![captionDict isKindOfClass:[NSNull class]])
         caption =  [captionDict objectForKey:@"text"];
-    }else{
+    else
         caption = @"";
-    }
+    
     owner = [[[dataArray objectAtIndex:indexPath.row] objectForKey:@"user"] objectForKey:@"full_name"];
     cell.textLabel.text = caption;
     cell.detailTextLabel.text = owner;
     
     return cell;
 }
-#define RANDOM ((arc4random()%255) / 255.0)
+
+
 - (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView
 {
     return dataArray.count;
 }
+
 - (AQGridViewCell *) gridView: (AQGridView *) gridView cellForItemAtIndex: (NSUInteger) index
 {
     static NSString *cellIdentifier = @"cellIdentifier";
@@ -266,16 +287,16 @@ NSString *redirectURLforGetAccessToken;
     
     if (cell == nil){
         cell = [[AQGridViewCell alloc] initWithFrame:CGRectMake(10.0, 0.0, 75.0, 75.0) reuseIdentifier:cellIdentifier];
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:cell.bounds];
+        UIImageView *cellImageView = [[UIImageView alloc] initWithFrame:cell.bounds];
         
-        [cell.contentView addSubview:imageView];
-        imageView.tag = 999;
+        [cell.contentView addSubview:cellImageView];
+        cellImageView.tag = 999;
     }
-    for(UIImageView *i in [cell.contentView subviews]){
-        if(i.tag == 999){
+    
+    for (UIImageView *i in [cell.contentView subviews]) {
+        if (i.tag == 999) {
             
-            /////fetch picture
-            
+            /////fetch picture 
             __block NSString *imagePath = [[[[dataArray objectAtIndex:index] objectForKey:@"images"] objectForKey:@"standard_resolution"] objectForKey:@"url"];
             
             dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,  0ul);
@@ -289,20 +310,14 @@ NSString *redirectURLforGetAccessToken;
                 
                 /////////////////////////////////////////////////////////////////////////////////////////
                 
-                
                 NSString *imagePathInCache = [documentPath stringByAppendingPathComponent:imageName];            
-                if ( [[NSFileManager defaultManager] fileExistsAtPath:imagePathInCache]) // if มีอยู่ใน cache
-                {
+                if ( [[NSFileManager defaultManager] fileExistsAtPath:imagePathInCache]) { // if มีอยู่ใน cache
                     image = [NSData dataWithContentsOfFile:imagePathInCache];
-                }
-                else        
-                {
+                } else {
                     NSURL *imageURL = [NSURL URLWithString:imagePath];
                     
                     image = [NSData dataWithContentsOfURL:imageURL];
                     [image writeToFile:[documentPath stringByAppendingPathComponent:imageName] atomically:YES];
-                    
-                    
                 }
                                 
                 dispatch_sync(dispatch_get_main_queue(), ^{
@@ -319,12 +334,8 @@ NSString *redirectURLforGetAccessToken;
              
         }
     }
-    
-    //cell.backgroundColor = [UIColor colorWithRed:RANDOM green:RANDOM blue:RANDOM alpha:1];
-        
+
     return cell;
-    
-    
 }
                    
                    
@@ -333,23 +344,27 @@ NSString *redirectURLforGetAccessToken;
     return ( CGSizeMake(80.0, 80.0) );
 }
 
+
+- (void)gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
+{
+    NSDictionary *cell =  [dataArray objectAtIndex:index];
+
+    NSString *pictureLink = [[[cell objectForKey:@"images"] objectForKey:@"standard_resolution"] objectForKey:@"url"];
+    
+    NSData *picture = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:pictureLink]] returningResponse:nil error:NULL];
+    
+    [imageView setImage:[UIImage imageWithData:picture]];
+    [imageView setFrame:CGRectMake(0, 0, 1, 1)];
+    imageView.hidden = NO;
+    backgroundView.hidden = NO;
+    backgroundView.alpha = 0.0;
+    
+    [UIView beginAnimations:@"" context:NULL];
+    backgroundView.alpha = 1.0;
+    [imageView setFrame:CGRectMake(0, 0, 320, 320)];
+    
+    [UIView commitAnimations];
+    
+}
+
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -31,6 +31,22 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="nd5-oe-Ahb" customClass="AQGridView">
+                                <rect key="frame" x="0.0" y="0.0" width="329" height="424"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="vq7-VJ-1KS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="424"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="nyv-JO-QeA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gTL-eY-2za">
                                 <rect key="frame" x="0.0" y="423" width="320" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,17 +59,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" id="nd5-oe-Ahb" customClass="AQGridView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="424"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Instagram Feed :)" id="ZKW-NZ-8BU"/>
                     <connections>
+                        <outlet property="backgroundView" destination="vq7-VJ-1KS" id="agv-8O-pzS"/>
                         <outlet property="gridView" destination="nd5-oe-Ahb" id="Qed-72-2ku"/>
+                        <outlet property="imageView" destination="nyv-JO-QeA" id="aTN-DT-qXV"/>
                         <outlet property="logOutButton" destination="gTL-eY-2za" id="bmk-Wr-Ji0"/>
                         <outlet property="photoGridTableView" destination="L8C-F3-dgY" id="jzf-uU-1Kd"/>
                     </connections>
@@ -67,23 +80,6 @@
             <point key="canvasLocation" x="336" y="-228"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AQGridView" superclassName="UIScrollView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AQGridView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-        <class className="ODViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ODViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="gridView" candidateClass="AQGridView"/>
-                <relationship kind="outlet" name="logOutButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="photoGridTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

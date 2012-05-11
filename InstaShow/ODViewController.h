@@ -15,6 +15,8 @@
     NSArray *dataArray;
     NSString *accessToken;
     IBOutlet UIButton *logOutButton;
+    IBOutlet UIImageView *imageView;
+    IBOutlet UIView *backgroundView;
 }
 
 @property (weak, nonatomic) IBOutlet AQGridView *gridView;
